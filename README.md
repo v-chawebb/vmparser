@@ -1,7 +1,15 @@
 # vmparser
 Quick bash script to convert copy/paste of ASC VM Properties page to useful output for case notes.
 
-Login to ASC >> Copy/Paste the content from the VM Properties page into either excel or Notepad++
+Login to ASC >> Copy/Paste the content from the VM Properties page into a text file in your fav distro.
+
+Once the data is in place, run the following command to convert the data into a useable format
+
+sed -i 's/\t/,/g' <name_of_file>
+
+********** If you want to use the old method of data conversion please use the data below, otherwise use the information above ***********
+
+Login to ASC >> Copy/Paste the content from the VM Properties page into Excel or Notepad++
 
 To convert the web content into a usable format for the script do either of the following.
 
