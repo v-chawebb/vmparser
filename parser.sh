@@ -1,6 +1,7 @@
 #!/bin/bash
 
 file=$1
+sed -i 's/\t/,/g' $file
 varsub=($(awk -F ',' '/Resource Uri/ {print $2}' $file | awk -F '/' '{print $3}'))
 varrg=($(awk -F ',' '/Resource Uri/ {print $2}' $file | awk -F '/' '{print $5}'))
 varvm=($(awk -F ',' '/Resource Uri/ {print $2}' $file | awk -F '/' '{print $9}'))
@@ -16,5 +17,4 @@ echo "Region: $(\awk -F ',' '/^Region/ {print $2}' $file)"
 echo "OS: $(\awk -F ',' '/^GuestOSVersion/ {print $2}' $file)"
 echo "OS Created From: $(\awk -F ',' '/^OS Created From/ {print $2}' $file)"
 echo "Size: $(\awk -F ',' '/^Size/ {print $2}' $file)"
-
 

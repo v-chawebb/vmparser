@@ -3,6 +3,12 @@ Quick bash script to convert copy/paste of ASC VM Properties page to useful outp
 
 Login to ASC >> Copy/Paste the content from the VM Properties page into a text file in your fav distro.
 
+The command is as follows
+
+parser.sh <file_name>
+
+******* If data conversion fails for some reason or you get wierd output, please refer to the instructions below on manual adjustment
+
 Once the data is in place, run the following command to convert the data into a useable format
 
 sed -i 's/\t/,/g' <name_of_file>
