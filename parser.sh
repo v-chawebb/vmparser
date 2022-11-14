@@ -2,6 +2,11 @@
 
 read -p "SR#: " srnum
 read -p "Time Zone of User: " tzuser
+read -p "Prefered Method of Contact " contactMethod
+read -p "Issue " issue
+read -p "Problem Statement " statement
+
+
 
 file=$1
 sed -i 's/\t/,/g' $file
@@ -27,6 +32,9 @@ echo "Region: $(\awk -F ',' '/^Region/ {print $2}' $file)"
 echo "OS: $(\awk -F ',' '/^GuestOSVersion/ {print $2}' $file)"
 echo "OS Created From: $(\awk -F ',' '/^OS Created From/ {print $2}' $file)"
 echo "Size: $(\awk -F ',' '/^Size/ {print $2}' $file)"
+echo "Guest Agent Status: $(\awk -F ',' '/^Guest Agent Status/ {print$2}' $file)"
+echo "Guest Agent Message: $(\awk -F ',' '/^Guest Agent Message/ {print$2}' $file)"
+echo "Guest Agent Version: $(\awk -F ',' '/^Guest Agent Version/ {print$2}' $file)"
 echo -e "\n \n"
 echo -e "CX VERBATIM\n"
 echo -e "============================================================="
