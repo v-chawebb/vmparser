@@ -41,4 +41,4 @@ If anyone has any questions or comments, please reach out.
 - [x] Create Bash script
 - [x] Create Readme
 - [ ] Create Python Script
-- [ ] Create Powershell Script 
+- [x] Create Powershell Script 
