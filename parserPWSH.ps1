@@ -1,4 +1,13 @@
-function Parse-Properties { 
+<#PSScriptInfo
+
+.VERSION 1.0
+
+.AUTHOR v-kclayson
+
+.COMPANYNAME Microsoft 
+
+#>
+
 param(
     [Parameter (Mandatory = $True, Position=0)] [String]$FilePath
 )
@@ -33,9 +42,3 @@ ForEach($line in $fileData) {
 }
 
 $data
-
-}
-
-$data = $null
-$URI = $null
-Parse-Properties ./props.txt

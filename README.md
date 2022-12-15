@@ -1,8 +1,8 @@
-# vmparser
+# VMPARSER Project
 
-Quick bash script to convert copy/paste of ASC VM Legacy Properties page to useful output for case notes.
+Quick bash script and powershell script to convert copy/paste of ASC VM Legacy Properties page to useful output for case notes.
 
-## How to Use
+## How to Use Bash Script
 
 1. Login to ASC 
 2. Copy/Paste the content from the VM Properties page into a text file in your fav distro.
@@ -11,6 +11,18 @@ Quick bash script to convert copy/paste of ASC VM Legacy Properties page to usef
 ``` 
 parser.sh <file_name> 
 ```
+
+## How to User Powershell Script
+
+1. Login to ASC
+2. Copy/Paste the content from the Legacy VM Properties page into a text file
+3. Run the following command 
+
+```
+parserPWSH.ps1 filePath.txt
+```
+
+
 
 ## Notes
 
