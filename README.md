@@ -16,10 +16,11 @@ parser.sh <file_name>
 
 1. Login to ASC
 2. Copy/Paste the content from the Legacy VM Properties page into a text file
-3. Run the following command 
+3. Save the text file.
+4. Run the following command 
 
 ```
-parserPWSH.ps1 filePath.txt
+parserPWSH.ps1 /path/to/file.txt
 ```
 
 If you are having issues with running the PowerShell script, please make sure that text file and script are present in the same folder (for example, I use a simple folder setup such as C:\PSScripts).
