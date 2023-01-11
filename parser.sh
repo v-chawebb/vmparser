@@ -16,8 +16,8 @@ varvm=($(awk -F ',' '/Resource Uri/ {print $2}' $file | awk -F '/' '{print $9}')
 
 echo "TIME ZONE: $tzuser"
 echo "SR# $srnum"
-echo -e "\n \nISSUE: \n \n"
-echo -e "PROBLEM STATEMENT: \n \n"
+echo -e "\n \nISSUE: $issue \n \n"
+echo -e "PROBLEM STATEMENT: $statement \n \n"
 
 echo -e "ENVIRONMENT \n"
 echo -e "=============================================================\n"
