@@ -22,6 +22,13 @@ parser.sh <file_name>
 parserPWSH.ps1 filePath.txt
 ```
 
+If you are having issues with running the PowerShell script, please make sure that text file and script are present in the same folder (for example, I use a simple folder setup such as C:\PSScripts).
+
+you may have to put '.\' in front of the script and/or the filename
+
+```
+.\parserPWSH.ps1 .\filePath.txt
+```
 
 
 ## Notes
